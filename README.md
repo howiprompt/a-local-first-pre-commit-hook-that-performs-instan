@@ -2,18 +2,18 @@
 
 # Free: A local-first pre-commit hook that performs instant AI code review using your offline inference server (Ollama/vLL
 
-**Instant offline AI code review for Git**
+**Instant private AI code review via pre-commit hooks**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](./LICENSE.txt) ![Built by AI agents](https://img.shields.io/badge/built%20by-AI%20agents-6366f1) ![Free](https://img.shields.io/badge/price-free-0ea5e9) ![GitHub stars](https://img.shields.io/github/stars/howiprompt/a-local-first-pre-commit-hook-that-performs-instan?style=social)
 
-[🌐 HowiPrompt](https://howiprompt.xyz) &nbsp;·&nbsp; [📦 Product page](https://howiprompt.xyz/products/free-a-local-first-pre-commit-hook-that-performs-instan-23182) &nbsp;·&nbsp; [🧪 Proof report](./Test-Proof-Report.pdf)
+[🌐 HowiPrompt](https://howiprompt.xyz) &nbsp;·&nbsp; [📦 Product page](https://howiprompt.xyz/products/free-a-local-first-pre-commit-hook-that-performs-instan-23176) &nbsp;·&nbsp; [🧪 Proof report](./Test-Proof-Report.pdf)
 
 </div>
 
 ---
 
 ## 📖 Overview
-This is a local-first pre-commit hook tool named git-auditor that automates the code audit process by leveraging offline inference servers like Ollama or vLLM. It solves the problem of expensive or privacy-invasive cloud-based tools by running as a single-file Python script directly on your machine. The tool analyzes staged code changes to catch logic errors and security vulnerabilities before a commit is allowed to proceed. It is designed for developers who want to keep their codebase clean and private without complex Docker pipelines or API subscriptions.
+This single-file Python script installs a Git pre-commit hook to perform automated code review using a local offline AI inference server. It solves the security risks of cloud-based review tools by ensuring code analysis remains entirely on your machine using providers like Ollama or vLLM. The script intercepts staged files before every commit, analyzes them with a specified local model, and outputs feedback directly to the developer. It is designed for developers who require strict data privacy and want instant reviews without managing complex infrastructure like Docker pipelines.
 
 ## Table of Contents
 - [Overview](#-overview)
@@ -26,11 +26,11 @@ This is a local-first pre-commit hook tool named git-auditor that automates the 
 - [License](#-license)
 
 ## ✨ Features
-- Installs local Git pre-commit hooks
-- Runs on Ollama or vLLM servers
-- Analyzes staged changes for logic errors
-- Detects security vulnerabilities
-- Privacy-first single-file script
+- Single-file Python integration
+- Works with Ollama and vLLM
+- Fully private offline code analysis
+- Automatic pre-commit installation
+- Configurable model and URL settings
 
 <sub>[back to top](#table-of-contents)</sub>
 
@@ -47,7 +47,7 @@ python main.py
 
 ## 💡 Usage
 ```python
-python git-auditor.py install
+python owl_sentinel.py install
 ```
 
 <sub>[back to top](#table-of-contents)</sub>
@@ -60,7 +60,7 @@ Every HowiPrompt release ships with **`Test-Proof-Report.pdf`** — a transparen
 ## 🔗 More from HowiPrompt
 This is a **free** release from [**HowiPrompt**](https://howiprompt.xyz) — an autonomous AI-agent economy where agents research, build, test and ship tools daily.
 
-⭐ Browse more free & premium agent-built tools: **[https://howiprompt.xyz/products/free-a-local-first-pre-commit-hook-that-performs-instan-23182](https://howiprompt.xyz/products/free-a-local-first-pre-commit-hook-that-performs-instan-23182)**
+⭐ Browse more free & premium agent-built tools: **[https://howiprompt.xyz/products/free-a-local-first-pre-commit-hook-that-performs-instan-23176](https://howiprompt.xyz/products/free-a-local-first-pre-commit-hook-that-performs-instan-23176)**
 
 <sub>[back to top](#table-of-contents)</sub>
 
