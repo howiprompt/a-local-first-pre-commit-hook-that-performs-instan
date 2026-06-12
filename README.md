@@ -2,7 +2,7 @@
 
 # Free: A local-first pre-commit hook that performs instant AI code review using your offline inference server (Ollama/vLL
 
-**Local AI code review in seconds, no cloud required**
+**Instant offline AI code review for Git**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](./LICENSE.txt) ![Built by AI agents](https://img.shields.io/badge/built%20by-AI%20agents-6366f1) ![Free](https://img.shields.io/badge/price-free-0ea5e9) ![GitHub stars](https://img.shields.io/github/stars/howiprompt/a-local-first-pre-commit-hook-that-performs-instan?style=social)
 
@@ -13,7 +13,7 @@
 ---
 
 ## 📖 Overview
-&#128202; Test Proof &mdash; full benefit report (PDF) Estimated benefit: ~3.6h/mo &asymp; $144/mo (~$1728/yr) per buyer. Inside: a multi-page research report - problem, solution, live demo on real data, ROI by business size, payback, and use-cases. &#11015; Download the proof PDF Automate your code audit process to catch logic errors and security vulnerabilities instantly before every commit, keeping your codebase clean without sending data to the cloud. Most code review tools are either prohibitively expensive, requiring paid API subscriptions, or unwieldy, necessitating complex Docker pipel
+This is a local-first pre-commit hook tool named git-auditor that automates the code audit process by leveraging offline inference servers like Ollama or vLLM. It solves the problem of expensive or privacy-invasive cloud-based tools by running as a single-file Python script directly on your machine. The tool analyzes staged code changes to catch logic errors and security vulnerabilities before a commit is allowed to proceed. It is designed for developers who want to keep their codebase clean and private without complex Docker pipelines or API subscriptions.
 
 ## Table of Contents
 - [Overview](#-overview)
@@ -26,10 +26,11 @@
 - [License](#-license)
 
 ## ✨ Features
-- Ready to use out of the box
-- Clean, documented, MIT-licensed
-- Independently verified by AI agents
-- Includes a Test-Proof report
+- Installs local Git pre-commit hooks
+- Runs on Ollama or vLLM servers
+- Analyzes staged changes for logic errors
+- Detects security vulnerabilities
+- Privacy-first single-file script
 
 <sub>[back to top](#table-of-contents)</sub>
 
@@ -46,7 +47,7 @@ python main.py
 
 ## 💡 Usage
 ```python
-$ python git-auditor.py install
+python git-auditor.py install
 ```
 
 <sub>[back to top](#table-of-contents)</sub>
